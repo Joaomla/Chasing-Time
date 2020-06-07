@@ -79,8 +79,8 @@ public class Player : MonoBehaviour
         var newXPos = transform.position.x + deltaX;
         var newYPos = transform.position.y + deltaY;
 
-        //transform.position = new Vector2(newXPos, newYPos);
-        rb.position = new Vector2(newXPos, newYPos);
+        transform.position = new Vector2(newXPos, newYPos);
+        //rb.position = new Vector2(newXPos, newYPos);
 
         // Updates direction the player is facing
         if (movement.x != 0 || movement.y != 0)
