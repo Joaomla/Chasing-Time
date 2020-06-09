@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -244,8 +245,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
@@ -262,9 +261,9 @@ MonoBehaviour:
   m_Text: '"After a long while, pacing about in this cave, I chose not to. The fountain
     gives you the power to live forever but....living forever sounds lonely, repetitive
     and dreadful. Life is a treasure because it''s so finite and unique, so to you
-    I say: give it time and think more thoroughly about it. Spend more time with your
-    loved ones, explore even more the world, and perhaps you''ll arrive at the conclusion
-    that you won''t need eternal life to be happy, as I did."'
+    I say: give it time and think more thoroughly about it. Spend more time with
+    your loved ones, explore even more the world, and perhaps you''ll arrive at the
+    conclusion that you won''t need eternal life to be happy, as I did."'
 --- !u!222 &589606493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -430,8 +429,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
@@ -446,7 +443,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: '"Dear grandson, I know you would come here the moment you found that watch.
-    When I found the fountain i was struck with the same question as you. ''Should
+    When I found the fountain I was struck with the same question as you. ''Should
     I really drink its water?'', I asked myself"'
 --- !u!222 &627953018
 CanvasRenderer:
@@ -577,8 +574,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Click On Screen to Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -817,8 +812,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
@@ -848,11 +841,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9002378520152097823, guid: 09d075e62e608cf47a9a7cc37506526c,
-        type: 3}
-      propertyPath: m_Name
-      value: Music Manager
-      objectReference: {fileID: 0}
     - target: {fileID: 4404287353689212623, guid: 09d075e62e608cf47a9a7cc37506526c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -913,6 +901,11 @@ PrefabInstance:
       propertyPath: newMusic
       value: 
       objectReference: {fileID: 8300000, guid: 8cacb1655be24af4482b33cfcf058398, type: 3}
+    - target: {fileID: 9002378520152097823, guid: 09d075e62e608cf47a9a7cc37506526c,
+        type: 3}
+      propertyPath: m_Name
+      value: Music Manager
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09d075e62e608cf47a9a7cc37506526c, type: 3}
 --- !u!1001 &1944465513
@@ -927,6 +920,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4782274052405566490, guid: f7ff831e32af1a04a99091f0dd282919,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8cacb1655be24af4482b33cfcf058398, type: 3}
     - target: {fileID: 4782274052405566491, guid: f7ff831e32af1a04a99091f0dd282919,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -982,11 +980,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4782274052405566490, guid: f7ff831e32af1a04a99091f0dd282919,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8cacb1655be24af4482b33cfcf058398, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ff831e32af1a04a99091f0dd282919, type: 3}
 --- !u!1001 &4088689044867891871
@@ -996,11 +989,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4088689045261723942, guid: 6f8c42a8b9e2a454b9964589f0de58b2,
-        type: 3}
-      propertyPath: m_Name
-      value: Text Controller
-      objectReference: {fileID: 0}
     - target: {fileID: 4088689045261723940, guid: 6f8c42a8b9e2a454b9964589f0de58b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1086,5 +1074,10 @@ PrefabInstance:
       propertyPath: texts.Array.data[4]
       value: 
       objectReference: {fileID: 1405804870}
+    - target: {fileID: 4088689045261723942, guid: 6f8c42a8b9e2a454b9964589f0de58b2,
+        type: 3}
+      propertyPath: m_Name
+      value: Text Controller
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f8c42a8b9e2a454b9964589f0de58b2, type: 3}

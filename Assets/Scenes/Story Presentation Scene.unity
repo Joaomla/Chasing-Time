@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -175,8 +176,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 36
@@ -192,8 +191,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: From that point on I had a mission, I would find it myself! But....years
     passed, so many years that my grandpa is no longer with us. I never found not
-    even a clue about the whereabouts of the fountain...until today...if only my grandpa
-    was here today....
+    even a clue about the whereabouts of the fountain...until today...if only my
+    grandpa was here today....
 --- !u!222 &83592199
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -364,8 +363,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &734594069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,8 +381,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -411,11 +406,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9002378520152097823, guid: 09d075e62e608cf47a9a7cc37506526c,
-        type: 3}
-      propertyPath: m_Name
-      value: Music Manager
-      objectReference: {fileID: 0}
     - target: {fileID: 4404287353689212623, guid: 09d075e62e608cf47a9a7cc37506526c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -470,6 +460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002378520152097823, guid: 09d075e62e608cf47a9a7cc37506526c,
+        type: 3}
+      propertyPath: m_Name
+      value: Music Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09d075e62e608cf47a9a7cc37506526c, type: 3}
@@ -528,8 +523,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Click On Screen to continue
 
 '
@@ -687,8 +680,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Back to tutorial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -879,6 +870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4782274052405566490, guid: f7ff831e32af1a04a99091f0dd282919,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e32d0091c8292f489797d5144bf0511, type: 3}
     - target: {fileID: 4782274052405566491, guid: f7ff831e32af1a04a99091f0dd282919,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -934,11 +930,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4782274052405566490, guid: f7ff831e32af1a04a99091f0dd282919,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5e32d0091c8292f489797d5144bf0511, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ff831e32af1a04a99091f0dd282919, type: 3}
 --- !u!1 &1600419925
@@ -996,8 +987,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 36
@@ -1078,8 +1067,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 36
@@ -1159,8 +1146,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 36
@@ -1174,8 +1159,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: One day, i found an old pocket watch, but still working. It made a lot of
-    strange noises though, so I took it to my grandpa and asked where it was from.
+  m_Text: One day, I found an old pocket watch, but still working. It made a lot
+    of strange noises though, so I took it to my grandpa and asked where it was from.
     He said the watch was a strange and powerful relic. It allowed the user to go
     back in time...but.... just by a little.
 --- !u!222 &1873135506
@@ -1380,11 +1365,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4088689045261723942, guid: 6f8c42a8b9e2a454b9964589f0de58b2,
-        type: 3}
-      propertyPath: m_Name
-      value: Text Controller
-      objectReference: {fileID: 0}
     - target: {fileID: 4088689045261723940, guid: 6f8c42a8b9e2a454b9964589f0de58b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1470,5 +1450,10 @@ PrefabInstance:
       propertyPath: texts.Array.data[3]
       value: 
       objectReference: {fileID: 83592198}
+    - target: {fileID: 4088689045261723942, guid: 6f8c42a8b9e2a454b9964589f0de58b2,
+        type: 3}
+      propertyPath: m_Name
+      value: Text Controller
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f8c42a8b9e2a454b9964589f0de58b2, type: 3}
